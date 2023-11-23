@@ -53,7 +53,7 @@ afterEvaluate {
 
                 groupId = "github.kotlin-enjoyer"
                 artifactId = "builder"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }

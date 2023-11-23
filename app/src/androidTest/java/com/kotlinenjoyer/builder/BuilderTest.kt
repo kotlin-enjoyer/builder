@@ -98,6 +98,7 @@ class BuilderTest {
         println("result: $result")
 
         Assert.assertTrue(result.contains("notId=a123b"))
+        Assert.assertTrue(result.contains("bundle=com.a.b"))
         Assert.assertFalse(result.contains("notId=null"))
     }
 }

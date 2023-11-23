@@ -139,7 +139,7 @@ Java_com_kotlinenjoer_builder_Builder_replaceParamValue(
     while (std::getline(paramStream, paramPair, '&')) {
         size_t equalsPos = paramPair.find('=');
         if (equalsPos != std::string::npos) {
-            paramMap[paramPair.substr(1, equalsPos)] = paramPair.substr(equalsPos + 1);
+            paramMap[paramPair.substr(0, equalsPos)] = paramPair.substr(equalsPos + 1);
         }
     }
     paramMap[paramName] = paramValue;
